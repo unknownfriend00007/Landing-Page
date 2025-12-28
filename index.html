@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raghav | AI Developer & Student</title>
+    <title>Raghav | AI Developer & Innovator</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -11,12 +11,10 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <div class="logo">Raghav.dev</div>
+            <div class="logo">Raghav<span>.dev</span></div>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#instances">Live Instances</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="burger">
@@ -28,249 +26,155 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section class="hero-home">
         <div class="container">
             <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="status-pulse"></span>
+                    Available for Projects
+                </div>
                 <h1 class="glitch" data-text="Hi, I'm Raghav">Hi, I'm Raghav</h1>
-                <p class="tagline">AI Developer | ML Enthusiast | Class 12 Student</p>
-                <p class="description">Building intelligent systems and automating the future with AI/ML</p>
+                <p class="tagline">AI Developer | ML Enthusiast | System Architect</p>
+                <p class="hero-description">
+                    Class 12 student building production-grade AI systems. Specializing in automated content generation, 
+                    cryptocurrency analysis, LLM integration, and deploying scalable applications on free-tier infrastructure.
+                </p>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">7+</div>
+                        <div class="stat-label">Active Projects</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Live Instances</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Running Systems</div>
+                    </div>
+                </div>
+
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    <a href="projects.html" class="btn btn-primary">
+                        <i class="fas fa-folder"></i> View My Projects
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> Get In Touch
+                    </a>
                 </div>
             </div>
         </div>
+
+        <!-- Animated Background Elements -->
+        <div class="bg-animation">
+            <div class="float-element"></div>
+            <div class="float-element"></div>
+            <div class="float-element"></div>
+        </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- Tech Stack Section -->
+    <section class="tech-section">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I'm a Class 12 CBSE student passionate about AI/ML and building intelligent systems. While preparing for board exams, I simultaneously develop production-grade AI applications.</p>
-                    <p>I specialize in creating automated content generation systems, cryptocurrency prediction models, AI chatbots, and deploying them on free-tier cloud platforms.</p>
-                    
-                    <h3>Tech Stack</h3>
-                    <div class="tech-stack">
+            <h2 class="section-title">Tech Stack & Tools</h2>
+            <div class="tech-categories">
+                <div class="tech-category">
+                    <h3><i class="fas fa-code"></i> Languages</h3>
+                    <div class="tech-items">
                         <span class="tech-badge">Python</span>
-                        <span class="tech-badge">JavaScript/Node.js</span>
-                        <span class="tech-badge">AI/ML</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">SQL</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3><i class="fas fa-brain"></i> AI/ML</h3>
+                    <div class="tech-items">
                         <span class="tech-badge">LLMs</span>
                         <span class="tech-badge">Flowise</span>
-                        <span class="tech-badge">PostgreSQL</span>
-                        <span class="tech-badge">FFmpeg</span>
-                        <span class="tech-badge">Telegram Bots</span>
+                        <span class="tech-badge">OpenAI</span>
                         <span class="tech-badge">Hugging Face</span>
-                        <span class="tech-badge">GitHub Actions</span>
-                    </div>
-
-                    <h3>Platforms I Deploy On</h3>
-                    <div class="platforms">
-                        <span class="platform-badge"><i class="fas fa-cloud"></i> Render</span>
-                        <span class="platform-badge"><i class="fas fa-server"></i> Vercel</span>
-                        <span class="platform-badge"><i class="fas fa-robot"></i> Hugging Face Spaces</span>
-                        <span class="platform-badge"><i class="fas fa-database"></i> Neon PostgreSQL</span>
-                        <span class="platform-badge"><i class="fas fa-bolt"></i> Cloudflare Workers</span>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">My AI Projects</h2>
-            <div class="projects-grid">
-                
-                <div class="project-card">
-                    <div class="project-icon">🎬</div>
-                    <h3>DIRECTOR</h3>
-                    <p>YouTube clip finder & downloader with 3 processing modes (Ultra Fast, Hybrid, Full Re-encode). Search videos, select timestamps, download clips.</p>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>yt-dlp</span>
-                        <span>FFmpeg</span>
-                        <span>Gradio</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/unknownfriend00007/DIRECTOR" target="_blank"><i class="fab fa-github"></i> Code</a>
+                <div class="tech-category">
+                    <h3><i class="fas fa-database"></i> Backend & Data</h3>
+                    <div class="tech-items">
+                        <span class="tech-badge">PostgreSQL</span>
+                        <span class="tech-badge">SQLite</span>
+                        <span class="tech-badge">Redis</span>
+                        <span class="tech-badge">APIs</span>
                     </div>
                 </div>
-
-                <div class="project-card">
-                    <div class="project-icon">💰</div>
-                    <h3>Tarang Crypto Analyzer</h3>
-                    <p>Cryptocurrency prediction and analysis system using ML models to analyze market trends and provide trading insights.</p>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>ML</span>
-                        <span>Crypto APIs</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
+                <div class="tech-category">
+                    <h3><i class="fas fa-cloud"></i> Deployment</h3>
+                    <div class="tech-items">
+                        <span class="tech-badge">Render</span>
+                        <span class="tech-badge">Vercel</span>
+                        <span class="tech-badge">Cloudflare</span>
+                        <span class="tech-badge">Neon DB</span>
                     </div>
                 </div>
-
-                <div class="project-card">
-                    <div class="project-icon">📱</div>
-                    <h3>YouTube Shorts Factory</h3>
-                    <p>Automated video generation system for creating YouTube Shorts. Generates content, voiceovers, and publishes automatically.</p>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>AI</span>
-                        <span>Video Processing</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
+                <div class="tech-category">
+                    <h3><i class="fas fa-tools"></i> Tools</h3>
+                    <div class="tech-items">
+                        <span class="tech-badge">FFmpeg</span>
+                        <span class="tech-badge">yt-dlp</span>
+                        <span class="tech-badge">Gradio</span>
+                        <span class="tech-badge">Telegram API</span>
                     </div>
                 </div>
-
-                <div class="project-card">
-                    <div class="project-icon">🤖</div>
-                    <h3>Flowise AI Chatbots</h3>
-                    <p>Multiple AI chatbot instances built with Flowise. Custom workflows with LLM integration, memory management, and streaming responses.</p>
-                    <div class="project-tech">
-                        <span>Flowise</span>
-                        <span>LLMs</span>
-                        <span>PostgreSQL</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" target="_blank"><i class="fas fa-link"></i> Live</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon">💬</div>
-                    <h3>Telegram Bot Systems</h3>
-                    <p>Custom Telegram bots with AI integration, automated responses, and real-time data processing capabilities.</p>
-                    <div class="project-tech">
-                        <span>Node.js</span>
-                        <span>Telegram API</span>
-                        <span>AI Integration</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" target="_blank"><i class="fab fa-telegram"></i> Bot</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon">📊</div>
-                    <h3>Stock Market Predictor</h3>
-                    <p>ML-based stock market analysis and prediction system with real-time data processing and trend analysis.</p>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>ML</span>
-                        <span>Financial APIs</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Live Instances Section -->
-    <section id="instances" class="instances">
-        <div class="container">
-            <h2 class="section-title">Live Running Instances</h2>
-            <p class="section-description">Production systems currently deployed and running</p>
-            
-            <div class="instances-grid">
-                
-                <div class="instance-card">
-                    <div class="instance-status">
-                        <span class="status-dot active"></span>
-                        <span>Active</span>
-                    </div>
-                    <h3><i class="fas fa-video"></i> DIRECTOR App</h3>
-                    <p>YouTube clip downloader - Deployed on Render</p>
-                    <div class="instance-meta">
-                        <span><i class="fas fa-server"></i> Render</span>
-                        <span><i class="fas fa-memory"></i> 512MB RAM</span>
-                    </div>
-                    <a href="#" class="btn btn-small" target="_blank">Open App <i class="fas fa-external-link-alt"></i></a>
-                </div>
-
-                <div class="instance-card">
-                    <div class="instance-status">
-                        <span class="status-dot active"></span>
-                        <span>Active</span>
-                    </div>
-                    <h3><i class="fas fa-comments"></i> Flowise Instance #1</h3>
-                    <p>AI Chatbot with custom workflow - Deployed on Render</p>
-                    <div class="instance-meta">
-                        <span><i class="fas fa-server"></i> Render</span>
-                        <span><i class="fas fa-database"></i> PostgreSQL</span>
-                    </div>
-                    <a href="#" class="btn btn-small" target="_blank">Open App <i class="fas fa-external-link-alt"></i></a>
-                </div>
-
-                <div class="instance-card">
-                    <div class="instance-status">
-                        <span class="status-dot active"></span>
-                        <span>Active</span>
-                    </div>
-                    <h3><i class="fas fa-robot"></i> Telegram Bot</h3>
-                    <p>AI-powered Telegram bot - Running 24/7</p>
-                    <div class="instance-meta">
-                        <span><i class="fas fa-cloud"></i> Cloud Hosted</span>
-                        <span><i class="fab fa-telegram"></i> Telegram</span>
-                    </div>
-                    <a href="#" class="btn btn-small" target="_blank">Chat with Bot <i class="fas fa-external-link-alt"></i></a>
-                </div>
-
-                <div class="instance-card">
-                    <div class="instance-status">
-                        <span class="status-dot maintenance"></span>
-                        <span>In Development</span>
-                    </div>
-                    <h3><i class="fas fa-chart-line"></i> Crypto Analyzer</h3>
-                    <p>Real-time cryptocurrency analysis system</p>
-                    <div class="instance-meta">
-                        <span><i class="fas fa-code-branch"></i> Beta</span>
-                        <span><i class="fas fa-flask"></i> Testing</span>
-                    </div>
-                    <a href="#" class="btn btn-small btn-disabled">Coming Soon</a>
-                </div>
-
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact-section">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="section-description">Let's collaborate on AI/ML projects or discuss tech!</p>
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="section-description">Open to collaborations, freelance projects, and tech discussions</p>
             
             <div class="contact-grid">
                 <a href="https://github.com/unknownfriend00007" target="_blank" class="contact-card">
-                    <i class="fab fa-github"></i>
+                    <div class="contact-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
                     <h3>GitHub</h3>
                     <p>@unknownfriend00007</p>
+                    <span class="contact-arrow">→</span>
                 </a>
                 
                 <a href="mailto:your.email@example.com" class="contact-card">
-                    <i class="fas fa-envelope"></i>
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
                     <h3>Email</h3>
                     <p>your.email@example.com</p>
+                    <span class="contact-arrow">→</span>
                 </a>
                 
-                <a href="#" target="_blank" class="contact-card">
-                    <i class="fab fa-telegram"></i>
+                <a href="https://t.me/yourusername" target="_blank" class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-telegram"></i>
+                    </div>
                     <h3>Telegram</h3>
                     <p>@yourusername</p>
+                    <span class="contact-arrow">→</span>
                 </a>
                 
-                <a href="#" target="_blank" class="contact-card">
-                    <i class="fab fa-linkedin"></i>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
                     <h3>LinkedIn</h3>
                     <p>Connect with me</p>
+                    <span class="contact-arrow">→</span>
                 </a>
+            </div>
+
+            <div class="availability-notice">
+                <i class="fas fa-clock"></i>
+                <p>Currently balancing Class 12 CBSE boards with building AI systems. Response time: 24-48 hours.</p>
             </div>
         </div>
     </section>
@@ -278,8 +182,20 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Raghav. Built with passion for AI & ML 🚀</p>
-            <p>Deploying on free tiers, building premium experiences.</p>
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="logo">Raghav<span>.dev</span></div>
+                    <p>Building intelligent systems, one commit at a time.</p>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    <p>&copy; 2025 Raghav. Deploying on free tiers, building premium experiences 🚀</p>
+                </div>
+            </div>
         </div>
     </footer>
 

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Raghav</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Raghav<span>.dev</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Header -->
+    <section class="projects-header">
+        <div class="container">
+            <h1>My Projects</h1>
+            <p>Production-grade AI systems built and deployed on free-tier infrastructure</p>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-section">
+        <div class="container">
+            
+            <!-- YouTube Shorts Factory -->
+            <div class="project-card-large">
+                <div class="project-header">
+                    <div class="project-icon-large">📱</div>
+                    <div class="project-title-area">
+                        <h2>YouTube Shorts Factory</h2>
+                        <div class="project-status">
+                            <span class="status-badge active">Live</span>
+                            <span class="status-badge">Production</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="project-description">
+                    Fully automated video generation system for creating YouTube Shorts. Uses AI for content generation, 
+                    text-to-speech for voiceovers, automated video editing, and scheduling. Generates engaging short-form 
+                    content without manual intervention.
+                </p>
+                <div class="project-features">
+                    <h4>Key Features:</h4>
+                    <ul>
+                        <li><i class="fas fa-check"></i> AI-powered script generation</li>
+                        <li><i class="fas fa-check"></i> Automated voiceover synthesis</li>
+                        <li><i class="fas fa-check"></i> Video editing pipeline</li>
+                        <li><i class="fas fa-check"></i> Scheduled publishing</li>
+                    </ul>
+                </div>
+                <div class="project-tech-stack">
+                    <span>Python</span>
+                    <span>FFmpeg</span>
+                    <span>OpenAI/LLMs</span>
+                    <span>YouTube API</span>
+                    <span>TTS</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="btn btn-small btn-primary" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> View Live
+                    </a>
+                    <a href="#" class="btn btn-small btn-secondary" target="_blank">
+                        <i class="fab fa-github"></i> Source Code
+                    </a>
+                </div>
+            </div>
+
+            <!-- Crypto Analyzer -->
+            <div class="project-card-large">
+                <div class="project-header">
+                    <div class="project-icon-large">💰</div>
+                    <div class="project-title-area">
+                        <h2>Tarang Crypto Analyzer</h2>
+                        <div class="project-status">
+                            <span class="status-badge active">Live</span>
+                            <span class="status-badge beta">Beta</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="project-description">
+                    Advanced cryptocurrency prediction and analysis system using machine learning models. Analyzes market trends, 
+                    historical data, sentiment analysis from social media, and provides real-time trading insights with technical 
+                    indicators and price predictions.
+                </p>
+                <div class="project-features">
+                    <h4>Key Features:</h4>
+                    <ul>
+                        <li><i class="fas fa-check"></i> ML-based price prediction models</li>
+                        <li><i class="fas fa-check"></i> Real-time market data analysis</li>
+                        <li><i class="fas fa-check"></i> Social sentiment tracking</li>
+                        <li><i class="fas fa-check"></i> Technical indicators dashboard</li>
+                    </ul>
+                </div>
+                <div class="project-tech-stack">
+                    <span>Python</span>
+                    <span>ML/AI</span>
+                    <span>Crypto APIs</span>
+                    <span>PostgreSQL</span>
+                    <span>Real-time Data</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="btn btn-small btn-primary" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> View Dashboard
+                    </a>
+                    <a href="#" class="btn btn-small btn-secondary" target="_blank">
+                        <i class="fab fa-github"></i> Source Code
+                    </a>
+                </div>
+            </div>
+
+            <!-- DIRECTOR -->
+            <div class="project-card-large">
+                <div class="project-header">
+                    <div class="project-icon-large">🎬</div>
+                    <div class="project-title-area">
+                        <h2>DIRECTOR - YouTube Clip Cutter</h2>
+                        <div class="project-status">
+                            <span class="status-badge active">Live</span>
+                            <span class="status-badge">Production</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="project-description">
+                    Professional YouTube clip extraction tool for creating Shorts/Reels. Search videos, select timestamps, 
+                    download clips with 3 processing modes: Ultra Fast (stream copy), Hybrid (fast + precise), and Full Re-encode. 
+                    Includes 9:16 vertical crop for social media.
+                </p>
+                <div class="project-features">
+                    <h4>Key Features:</h4>
+                    <ul>
+                        <li><i class="fas fa-check"></i> YouTube search integration</li>
+                        <li><i class="fas fa-check"></i> Multiple timestamp processing</li>
+                        <li><i class="fas fa-check"></i> 3 speed/quality modes</li>
+                        <li><i class="fas fa-check"></i> Vertical crop for Shorts/Reels</li>
+                    </ul>
+                </div>
+                <div class="project-tech-stack">
+                    <span>Python</span>
+                    <span>yt-dlp</span>
+                    <span>FFmpeg</span>
+                    <span>Gradio</span>
+                    <span>Render</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="btn btn-small btn-primary" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> Try It Live
+                    </a>
+                    <a href="https://github.com/unknownfriend00007/DIRECTOR" class="btn btn-small btn-secondary" target="_blank">
+                        <i class="fab fa-github"></i> Source Code
+                    </a>
+                </div>
+            </div>
+
+            <!-- Flowise Instances -->
+            <div class="project-card-large">
+                <div class="project-header">
+                    <div class="project-icon-large">⚡</div>
+                    <div class="project-title-area">
+                        <h2>Hybrid Ultrafast Flowise Instances</h2>
+                        <div class="project-status">
+                            <span class="status-badge active">Live</span>
+                            <span class="status-badge">Infrastructure</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="project-description">
+                    High-performance Flowise instances powering multiple AI chatbots and LLM applications. Custom workflows with 
+                    advanced memory management, streaming responses, multi-instance architecture with load balancing, and PostgreSQL 
+                    for conversation persistence.
+                </p>
+                <div class="project-features">
+                    <h4>Key Features:</h4>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Multi-instance deployment</li>
+                        <li><i class="fas fa-check"></i> Custom LLM workflows</li>
+                        <li><i class="fas fa-check"></i> Memory & context management</li>
+                        <li><i class="fas fa-check"></i> Streaming real-time responses</li>
+                        <li><i class="fas fa-check"></i> PostgreSQL persistence</li>
+                    </ul>
+                </div>
+                <div class="project-tech-stack">
+                    <span>Flowise</span>
+                    <span>LLMs</span>
+                    <span>PostgreSQL</span>
+                    <span>Node.js</span>
+                    <span>Render</span>
+                    <span>Neon DB</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="btn btn-small btn-primary" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> Access Instances
+                    </a>
+                    <a href="#" class="btn btn-small btn-secondary" target="_blank">
+                        <i class="fas fa-book"></i> Documentation
+                    </a>
+                </div>
+            </div>
+
+            <!-- Proxy Protection System -->
+            <div class="project-card-large">
+                <div class="project-header">
+                    <div class="project-icon-large">🛡️</div>
+                    <div class="project-title-area">
+                        <h2>Backend Protection Proxy</h2>
+                        <div class="project-status">
+                            <span class="status-badge active">Live</span>
+                            <span class="status-badge">Security</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="project-description">
+                    Federated proxy architecture to protect backend services and APIs. Implements rate limiting, request validation, 
+                    authentication, DDoS protection, and load balancing across multiple backend instances. Deployed on Cloudflare Workers 
+                    for edge computing performance.
+                </p>
+                <div class="project-features">
+                    <h4>Key Features:</h4>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Rate limiting & throttling</li>
+                        <li><i class="fas fa-check"></i> Request validation & sanitization</li>
+                        <li><i class="fas fa-check"></i> DDoS protection</li>
+                        <li><i class="fas fa-check"></i> Load balancing</li>
+                        <li><i class="fas fa-check"></i> Edge deployment</li>
+                    </ul>
+                </div>
+                <div class="project-tech-stack">
+                    <span>Cloudflare Workers</span>
+                    <span>JavaScript</span>
+                    <span>Edge Computing</span>
+                    <span>Security</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="btn btn-small btn-secondary" target="_blank">
+                        <i class="fab fa-github"></i> Source Code
+                    </a>
+                </div>
+            </div>
+
+            <!-- Geopolitics Bot -->
+            <div class="project-card-large">
+                <div class="project-header">
+                    <div class="project-icon-large">🌍</div>
+                    <div class="project-title-area">
+                        <h2>Telegram Geopolitics Bot</h2>
+                        <div class="project-status">
+                            <span class="status-badge active">Live</span>
+                            <span class="status-badge">24/7</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="project-description">
+                    Automated Telegram bot delivering real-time geopolitical updates without bias. Aggregates news from multiple sources, 
+                    uses AI to filter and summarize content neutrally, and sends scheduled updates. Covers global events, conflicts, 
+                    diplomacy, and economic developments.
+                </p>
+                <div class="project-features">
+                    <h4>Key Features:</h4>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Multi-source news aggregation</li>
+                        <li><i class="fas fa-check"></i> AI-powered neutral summarization</li>
+                        <li><i class="fas fa-check"></i> Real-time updates (24/7)</li>
+                        <li><i class="fas fa-check"></i> Scheduled broadcasts</li>
+                        <li><i class="fas fa-check"></i> No editorial bias</li>
+                    </ul>
+                </div>
+                <div class="project-tech-stack">
+                    <span>Node.js</span>
+                    <span>Telegram Bot API</span>
+                    <span>News APIs</span>
+                    <span>AI/LLM</span>
+                    <span>Cron Jobs</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="btn btn-small btn-primary" target="_blank">
+                        <i class="fab fa-telegram"></i> Join Channel
+                    </a>
+                    <a href="#" class="btn btn-small btn-secondary" target="_blank">
+                        <i class="fab fa-github"></i> Source Code
+                    </a>
+                </div>
+            </div>
+
+            <!-- Indian English Speaker -->
+            <div class="project-card-large">
+                <div class="project-header">
+                    <div class="project-icon-large">🗣️</div>
+                    <div class="project-title-area">
+                        <h2>Indian English Speaker Website</h2>
+                        <div class="project-status">
+                            <span class="status-badge active">Live</span>
+                            <span class="status-badge">AI Voice</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="project-description">
+                    Text-to-speech web application with authentic Indian English accents. Supports multiple regional variations 
+                    (Hindi-influenced, Tamil-influenced, etc.), adjustable speech rate and pitch, and high-quality voice synthesis. 
+                    Perfect for content creators, education, and accessibility.
+                </p>
+                <div class="project-features">
+                    <h4>Key Features:</h4>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Authentic Indian English accents</li>
+                        <li><i class="fas fa-check"></i> Multiple regional variations</li>
+                        <li><i class="fas fa-check"></i> Adjustable speech parameters</li>
+                        <li><i class="fas fa-check"></i> High-quality synthesis</li>
+                        <li><i class="fas fa-check"></i> Download audio files</li>
+                    </ul>
+                </div>
+                <div class="project-tech-stack">
+                    <span>Python</span>
+                    <span>TTS/AI Voice</span>
+                    <span>Web Interface</span>
+                    <span>Audio Processing</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="btn btn-small btn-primary" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> Try It Now
+                    </a>
+                    <a href="#" class="btn btn-small btn-secondary" target="_blank">
+                        <i class="fab fa-github"></i> Source Code
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Interested in collaborating?</h2>
+            <p>Let's build something amazing together</p>
+            <a href="index.html#contact" class="btn btn-primary btn-large">
+                <i class="fas fa-envelope"></i> Get In Touch
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="logo">Raghav<span>.dev</span></div>
+                    <p>Building intelligent systems, one commit at a time.</p>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="index.html#contact">Contact</a>
+                    </div>
+                    <p>&copy; 2025 Raghav. Deploying on free tiers, building premium experiences 🚀</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

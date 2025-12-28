@@ -1,25 +1,33 @@
-// Mobile Navigation Toggle
+// ============================================
+// MOBILE NAVIGATION
+// ============================================
 const burger = document.querySelector('.burger');
 const nav = document.querySelector('.nav-links');
 const navLinks = document.querySelectorAll('.nav-links li');
 
-burger.addEventListener('click', () => {
-    // Toggle Nav
-    nav.classList.toggle('active');
-    
-    // Burger Animation
-    burger.classList.toggle('toggle');
-});
+if (burger) {
+    burger.addEventListener('click', () => {
+        // Toggle Nav
+        nav.classList.toggle('active');
+        
+        // Burger Animation
+        burger.classList.toggle('toggle');
+    });
+}
 
 // Close mobile menu when clicking a link
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
-        nav.classList.remove('active');
-        burger.classList.remove('toggle');
+        if (nav.classList.contains('active')) {
+            nav.classList.remove('active');
+            burger.classList.remove('toggle');
+        }
     });
 });
 
-// Smooth scroll for anchor links
+// ============================================
+// SMOOTH SCROLL
+// ============================================
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -33,20 +41,24 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Navbar background on scroll
+// ============================================
+// NAVBAR SCROLL EFFECT
+// ============================================
 const navbar = document.querySelector('.navbar');
 window.addEventListener('scroll', () => {
     if (window.scrollY > 100) {
-        navbar.style.background = 'rgba(15, 23, 42, 0.98)';
+        navbar.classList.add('scrolled');
     } else {
-        navbar.style.background = 'rgba(15, 23, 42, 0.95)';
+        navbar.classList.remove('scrolled');
     }
 });
 
-// Intersection Observer for fade-in animations
+// ============================================
+// INTERSECTION OBSERVER FOR ANIMATIONS
+// ============================================
 const observerOptions = {
     threshold: 0.1,
-    rootMargin: '0px 0px -100px 0px'
+    rootMargin: '0px 0px -50px 0px'
 };
 
 const observer = new IntersectionObserver((entries) => {
@@ -58,27 +70,52 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe all cards
-const cards = document.querySelectorAll('.project-card, .instance-card, .contact-card');
-cards.forEach(card => {
-    card.style.opacity = '0';
-    card.style.transform = 'translateY(30px)';
-    card.style.transition = 'all 0.6s ease-out';
-    observer.observe(card);
+// Observe all cards and sections
+const animatedElements = document.querySelectorAll(
+    '.project-card-large, .contact-card, .stat-card, .tech-category'
+);
+
+animatedElements.forEach(element => {
+    element.style.opacity = '0';
+    element.style.transform = 'translateY(30px)';
+    element.style.transition = 'all 0.6s ease-out';
+    observer.observe(element);
 });
 
-// Add glitch effect on hover (optional)
-const glitchText = document.querySelector('.glitch');
-if (glitchText) {
-    glitchText.addEventListener('mouseenter', () => {
-        glitchText.style.animation = 'glitch 0.3s ease-in-out';
-    });
-    glitchText.addEventListener('animationend', () => {
-        glitchText.style.animation = '';
-    });
-}
+// ============================================
+// ACTIVE LINK HIGHLIGHTING
+// ============================================
+const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+const navLinksArray = document.querySelectorAll('.nav-links a');
 
-// Console easter egg
-console.log('%c👋 Hey there!', 'font-size: 20px; color: #6366f1; font-weight: bold;');
-console.log('%cInterested in AI/ML? Let\'s connect!', 'font-size: 14px; color: #8b5cf6;');
-console.log('%cGitHub: https://github.com/unknownfriend00007', 'font-size: 12px; color: #10b981;');
+navLinksArray.forEach(link => {
+    const linkPage = link.getAttribute('href').split('#')[0];
+    if (linkPage === currentPage || 
+        (currentPage === '' && linkPage === 'index.html')) {
+        link.classList.add('active');
+    }
+});
+
+// ============================================
+// CONSOLE EASTER EGG
+// ============================================
+console.log('%c🚀 Welcome to My Portfolio!', 'font-size: 20px; color: #6366f1; font-weight: bold;');
+console.log('%c💡 Interested in AI/ML development?', 'font-size: 14px; color: #8b5cf6;');
+console.log('%c📧 Let\'s collaborate!', 'font-size: 14px; color: #10b981;');
+console.log('%c🔗 GitHub: https://github.com/unknownfriend00007', 'font-size: 12px; color: #cbd5e1;');
+
+// ============================================
+// PERFORMANCE OPTIMIZATION
+// ============================================
+// Lazy load images if needed in future
+if ('loading' in HTMLImageElement.prototype) {
+    const images = document.querySelectorAll('img[loading="lazy"]');
+    images.forEach(img => {
+        img.src = img.dataset.src;
+    });
+} else {
+    // Fallback for browsers that don't support lazy loading
+    const script = document.createElement('script');
+    script.src = 'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js';
+    document.body.appendChild(script);
+}
